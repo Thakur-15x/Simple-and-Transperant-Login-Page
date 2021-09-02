@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Zen+Tokyo+Zoo&display=swap');
+
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background: url(./img/london.jpg) no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    .container {
+        position: absolute;
+        top: 24%;
+        left: 42%;
+
+    }
+
+    .container .h2 {
+        color: white;
+        border-bottom: 5px solid indigo;
+        display: inline-block;
+        font-size: 32px;
+        font-family: 'Abril Fatface';
+        /* font-family: 'Zen Tokyo Zoo', cursive; */
+        padding: 5px 0px;
+        margin: 30px 0px;
+    }
+
+    .box {
+        margin: 20px 0px;
+        border-bottom: 2px solid indigo;
+    }
+
+    .box input {
+        /* border-bottom: 1px solid indigo;
+        border-right: 1px solid indigo; */
+        color: white;
+        background: none;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        padding: 5px 20px 5px 5px;
+        margin: 5px 0px;
+    }
+
+    .box img {
+        width: 30px;
+        filter: invert(100);
+        margin: -7px 0px;
+    }
+
+    .btn button {
+        border: 2px solid purple;
+        border-radius: 5px;
+        color: white;
+        background: none;
+        cursor: pointer;
+        padding: 3px 10px 3px 5px;
+        margin: 6px 30px 0px 0px;
+    }
+
+    .btn button:hover {
+        color: black;
+        background: rgb(231, 202, 231);
+    }
+
+    @media only screen and (max-width:410px) {
+        .container {
+            position: absolute;
+            top: 24%;
+            left: 44px;
+        }
+
+    }
+
+    @media (min-width:411px) and (max-width:730px) {
+        .container {
+            position: absolute;
+            top: 24%;
+            left: 100px;
+        }
+
+    }
+
+    @media (min-width:767px) and (max-width:1125px) {
+        .container {
+            left: 30%;
+
+        }
+
+        .container .h2 {
+            font-size: 55px;
+
+        }
+
+        .box input {
+            font-size: 35px;
+            padding: 5px 20px 10px 5px;
+            margin: 10px 0px 15px 0px;
+
+        }
+
+        .box img {
+            width: 45px;
+        }
+
+        .btn button {
+            font-size: 30px;
+            font-size: 35px;
+        }
+
+
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h2 class="h2">LogIn</h2>
+        <form action="">
+            <div class="box">
+                <label for="email">
+                    <img src="./img/email.png" alt="">
+                    <i class="fa-solid fa-square-envelope"></i>
+                    <input type="email" name="email" id="email" placeholder="Enter your email">
+                </label>
+            </div>
+            <div class="box">
+                <label for="password">
+                    <img src="./img/key.png" alt="">
+                    <input type="password" name="password" id="password" placeholder="Enter Password">
+                </label>
+            </div>
+            <div class="btn">
+                <button>Sign In</button>
+                <button>Sign Up</button>
+            </div>
+    </div>
+    </form>
+</body>
+
+</html>
